@@ -1,6 +1,7 @@
 #!/bin/bash
 resize -s 56 100
 a=0
+cd Juice/
 git pull
 cd ~/dat219g20v/assignments
 git pull
