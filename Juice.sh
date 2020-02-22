@@ -2,8 +2,10 @@
 resize -s 56 100
 a=0
 cd Juice/
+echo -e 'Checking for updates on Juice:'
 git pull
 cd ~/dat219g20v/assignments
+echo -e 'Checking for updates on Bamboo:'
 git pull
 while (($a <= 1))
 do
