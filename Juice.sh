@@ -87,9 +87,9 @@ fi
 if [ $FIRST == 3 ] 
 then
 clear
-read -p 'Skriv navn på prosjekt, eller stop for å avbryte ' PR 
+read -p 'Skriv navn på prosjekt, eller stopp for å avbryte ' PR 
 
-if [ $PR != 'stop' ]
+if [ $PR != 'stopp' ]
 then 
 clear
 read -p 'type oppgave?
