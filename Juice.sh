@@ -1,6 +1,8 @@
 #!/bin/bash
 resize -s 56 100
 a=0
+cd ~/
+git pull
 cd ~/dat219g20v/assignments
 git pull
 while (($a <= 1))
