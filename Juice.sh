@@ -59,7 +59,7 @@ oooooooooooooooooooooooooo++++++++++++++++++++++++/sNNmmmmmmmmmmmmmmmmmmmmmmNhdm
 ---------------------------------------------------hNmmmmmmmmmmmmmmmmmmmmmmmNhhmmmmy/////+/+/-`...-h
 ---------------------------------------------------dNmmmmmmmmmmmmmmmmmmmmmmmNhhmmmms//++//++/.`.``-d
 
-VERSION-22.02.20.14.03
+VERSION-22.02.20.14.18
 '
 read -p '1. GIT PUSH
 2. Test
