@@ -66,7 +66,7 @@ oooooooooooooooooooooooooo++++++++++++++++++++++++/sNNmmmmmmmmmmmmmmmmmmmmmmNhdm
 ---------------------------------------------------hNmmmmmmmmmmmmmmmmmmmmmmmNhhmmmmy/////+/+/-`...-h
 ---------------------------------------------------dNmmmmmmmmmmmmmmmmmmmmmmmNhhmmmms//++//++/.`.``-d
 
-VERSION-22.02.20.14.18
+VERSION-24.02.20.12.15
 '
 read -p '1. GIT PUSH
 2. Test
@@ -174,6 +174,15 @@ docker system prune -f
 sleep 2
 echo -n 'closing program'
 exit
+fi
+
+if [ $FIRST == 7 ]
+then
+cd 
+cd dat219g20v/
+git add Juice.sh
+git commit -m "update"
+git push
 fi
 
 if  [ $FIRST == 2 ]
