@@ -20,8 +20,7 @@ rm VERSION.txt
 
 echo VERSION=$(git rev-parse HEAD) > VERSION.txt
 fi
-echo -e 'Already up to date.
-'
+echo -e 'Already up to date.'
 
 ./Program.sh
 
