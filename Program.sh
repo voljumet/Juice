@@ -136,7 +136,7 @@ clear
 echo -e '--------------...'
 ls
 echo -e '--------------...'
-read -p 'prosjekt som skal slettes:' DELETE
+read -p 'prosjekt som skal slettes: ' DELETE
 rm -r $DELETE
 fi
 
@@ -165,7 +165,7 @@ echo -n 'closing program'
 exit
 fi
 
-if [ $FIRST == 7 ]
+if [ $FIRST == 'git' ]
 then
 cd ~/Juice/
 git add .
