@@ -7,7 +7,7 @@ Checking for updates on Bamboo:'
 git pull
 
 cd ~/Juice/
-head=$(git rev-parse HEAD)
+head=$(git rev-parse Master)
 source VERSION.txt
 
 echo -e '
@@ -15,15 +15,16 @@ Checking for updates on Juice:'
 if [ $VERSION != $head ]
 then
 git pull
-head=$(git rev-parse HEAD)
+#head=$(git rev-parse Master)
 number=$NUMBER
 let "number+=1"
 rm VERSION.txt
 
 echo VERSION=$(git rev-parse Master) \
 NUMBER=$number > VERSION.txt
+echo -e 'Updated'
 fi
-echo -e 'Already up to date.'
+
 
 ./Program.sh
 
