@@ -4,6 +4,7 @@ clear
 
 while (($a <= 1))
 do
+source VERSION.txt
 echo -n '
 hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsoo/-/oss++oooooooooooooooooooooooooooooo
 hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsoo:-:/++//+ooooooooooooooooooooooooooooo
@@ -56,8 +57,9 @@ oooooooooooooooooooooooooo++++++++++++++++++++++++/sNNmmmmmmmmmmmmmmmmmmmmmmNhdm
 ---------------------------------------------------hNmmmmmmmmmmmmmmmmmmmmmmmNhhmmmmy/////+/+/-`...-h
 ---------------------------------------------------dNmmmmmmmmmmmmmmmmmmmmmmmNhhmmmms//++//++/.`.``-d
 
-VERSION-24.02.20.12.15
-'
+VERSION '
+echo $NUMBER
+
 read -p '1. GIT PUSH
 2. Test
 3. Lag nytt
@@ -70,7 +72,8 @@ if  [ $FIRST == 1 ]
 then
 cd ~/dat219g20v/assignments/solutions/
 git add .
-git commit -m "Added and updated assignments"
+read -p 'Commit melding: ' MELDING
+git commit -m $MELDING
 git push origin master
 fi
 

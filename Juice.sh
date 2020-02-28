@@ -16,9 +16,12 @@ if [ $VERSION != $head ]
 then
 git pull
 head=$(git rev-parse HEAD)
+number=$NUMBER
+let "number+=1"
 rm VERSION.txt
 
-echo VERSION=$(git rev-parse HEAD) > VERSION.txt
+echo VERSION=$(git rev-parse HEAD) \
+NUMBER=$number > VERSION.txt
 fi
 echo -e 'Already up to date.'
 
