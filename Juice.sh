@@ -20,7 +20,7 @@ number=$NUMBER
 let "number+=1"
 rm VERSION.txt
 
-echo VERSION=$(git rev-parse HEAD) \
+echo VERSION=$(git rev-parse Master) \
 NUMBER=$number > VERSION.txt
 fi
 echo -e 'Already up to date.'
