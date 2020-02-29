@@ -1,5 +1,5 @@
 #!/bin/bash
-resize -s 56 100
+printf '\e[8;56;100t'
 
 cd ~/dat219g20v/assignments
 echo -e '
@@ -7,6 +7,7 @@ Checking for updates on Bamboo:'
 git pull
 
 cd ~/Juice/
+git fetch
 head=$(git rev-parse Master)
 source VERSION.txt
 
@@ -15,7 +16,6 @@ Checking for updates on Juice:'
 if [ $VERSION != $head ]
 then
 git pull
-#head=$(git rev-parse Master)
 number=$NUMBER
 let "number+=1"
 rm VERSION.txt
