@@ -4,6 +4,7 @@ clear
 
 while (($a <= 1))
 do
+cd ~/Juice/
 source VERSION.txt
 #wubba lubba dub dub
 echo -n '
@@ -74,7 +75,7 @@ then
 cd ~/dat219g20v/assignments/solutions/
 git add .
 read -p 'Commit melding: ' MELDING
-git commit -m $MELDING
+git commit -m "$MELDING"
 git push origin master
 fi
 

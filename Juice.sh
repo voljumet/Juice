@@ -25,7 +25,6 @@ NUMBER=$number > VERSION.txt
 echo -e 'Updated'
 fi
 
-
 ./Program.sh
 
 #end
