@@ -73,8 +73,8 @@ Valg: ' FIRST
 if  [ $FIRST == 1 ] 
 then
 cd ~/dat219g20v/assignments/solutions/
-git add .
 read -p 'Commit melding: ' MELDING
+git add .
 git commit -m "$MELDING"
 git push origin master
 fi
